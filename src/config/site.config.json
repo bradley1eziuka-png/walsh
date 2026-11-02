@@ -1,0 +1,71 @@
+{
+  "business": {
+    "name": "Walsh Painting & Powerwashing",
+    "shortName": "Walsh Painting & Powerwashing",
+    "legalName": "Walsh Painting and Powerwashing",
+    "ownerName": "Brian Dunleavy",
+    "yearsInBusiness": 22,
+    "phone": "(219) 741-0481",
+    "secondaryPhone": "(708) 707-8239",
+    "email": "paintdows@yahoo.com",
+    "address": {
+      "street": "430 Hayes Avenue",
+      "city": "Michigan City",
+      "state": "IN",
+      "zip": "46360"
+    },
+    "showStreetAddress": false,
+    "serviceAreas": [
+      "Michigan City, IN",
+      "Chesterton, IN",
+      "Valparaiso, IN",
+      "Ogden Dunes, IN",
+      "Lakeside, MI"
+    ],
+    "hours": [],
+    "hoursNote": "Open seven days a week. Call or send a request and we'll get back to you.",
+    "social": {
+      "facebook": "",
+      "instagram": "",
+      "google": "",
+      "yelp": "",
+      "nextdoor": "",
+      "youtube": ""
+    }
+  },
+  "branding": {
+    "logo": {
+      "src": "/images/walsh-mascot-sm.png",
+      "alt": "Walsh Painting & Powerwashing power washing mascot"
+    },
+    "favicon": "/favicon.png",
+    "colors": {},
+    "images": {
+      "powerWashing": "/images/power-washing.jpg",
+      "deck": "/images/gallery-exterior.jpg"
+    }
+  },
+  "services": {
+    "enabled": ["exterior", "powerWashing", "deck", "interior", "repairs"],
+    "overrides": {}
+  },
+  "content": {
+    "hero": {},
+    "about": {},
+    "finalCta": {},
+    "testimonials": []
+  },
+  "seo": {
+    "siteUrl": "",
+    "title": "",
+    "description": "",
+    "ogImage": "",
+    "locale": "en_US"
+  },
+  "form": {
+    "provider": "demo",
+    "formspreeId": "",
+    "webhookUrl": "",
+    "showDemoNotice": true
+  }
+}
