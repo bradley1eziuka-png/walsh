@@ -34,23 +34,16 @@ function TermsPage() {
         schedule of any job are agreed with you directly before work begins.
       </p>
 
-      <h2>Estimate requests</h2>
+      <h2>Estimates</h2>
       <p>
-        Submitting the form requests that we contact you. It does not create a contract or guarantee
-        that we can take on a project or serve your location.
+        Estimates are provided by phone. Contacting us does not create a contract or guarantee that
+        we can take on a project or serve your location.
       </p>
 
       <h2>Images</h2>
       <p>
         Some images on this site are illustrative and may not show work completed by us. Results
         vary with the condition of the property and the surface involved.
-      </p>
-
-      <h2>Text messages</h2>
-      <p>
-        If you opt in to text messages, you agree that we may text you about your estimate request.
-        Message and data rates may apply. Reply STOP to opt out. See our{" "}
-        <a href="/privacy">Privacy Policy</a>.
       </p>
 
       <h2>Use of the site</h2>

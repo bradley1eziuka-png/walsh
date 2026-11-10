@@ -14,20 +14,14 @@ if (cfg.business.name === "Your Painting Company")
   problems.push("business.name is still the placeholder");
 if (cfg.business.phone === "(555) 555-0100")
   problems.push("business.phone is still the placeholder");
-if (cfg.form.provider === "demo")
-  problems.push(
-    "form.provider is 'demo' — estimate requests are NOT delivered. Set formspree (formspreeId) or ghl-webhook (webhookUrl).",
-  );
-if (cfg.form.provider === "formspree" && !cfg.form.formspreeId)
-  problems.push("form.provider is formspree but formspreeId is empty");
-if (cfg.form.provider === "ghl-webhook" && !cfg.form.webhookUrl)
-  problems.push("form.provider is ghl-webhook but webhookUrl is empty");
 if (!cfg.seo.siteUrl && !process.env.SITE_URL && !process.env.VITE_SITE_URL)
   notes.push(
     "seo.siteUrl is empty — canonical URLs and sitemap are skipped until the domain is known",
   );
 if (!cfg.business.address.city)
   notes.push("business.address.city is empty — titles and hero pill aren't localized");
+if (!cfg.business.bbb?.verified)
+  notes.push("business.bbb.verified is false — no BBB rating is shown anywhere (verify first)");
 if (!cfg.business.email) notes.push("business.email is empty — email is omitted from the footer");
 if (!cfg.branding.logo.src) notes.push("no logo set — the paintbrush mark is shown");
 if (cfg.content.testimonials.length === 0)

@@ -73,8 +73,8 @@ export const AREAS: AreaConfig[] = [
         text: "We can handle both the washing and the painting or staining, so you only schedule one company.",
       },
       {
-        title: "Estimates by request",
-        text: "Send the form or call and we'll follow up about your Chesterton project.",
+        title: "Call for an estimate",
+        text: "Call us to talk through your Chesterton project.",
       },
     ],
   },
@@ -148,7 +148,7 @@ export const AREAS: AreaConfig[] = [
       "Our work doesn't stop at the state line. We also serve Lakeside, Michigan, and nearby Southwest Michigan beach communities.",
     paragraphs: [
       "Lakeside is part of the Lake Michigan shoreline in Berrien County, Michigan, not far north of Michigan City. We provide exterior painting, power washing, and deck services to homeowners there and in neighboring lake communities.",
-      "Some lakeside properties are used seasonally. If that's your situation, tell us when you'll be around and when you'd like the work finished, and we'll plan around it. Call or send the form and we'll follow up about getting your job scheduled.",
+      "Some lakeside properties are used seasonally. If that's your situation, tell us when you'll be around and when you'd like the work finished, and we'll plan around it. Give us a call and we'll talk through getting your job scheduled.",
     ],
     considerations: [
       {

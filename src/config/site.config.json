@@ -3,7 +3,6 @@
     "name": "Walsh Painting & Powerwashing",
     "shortName": "Walsh Painting & Powerwashing",
     "legalName": "Walsh Painting and Powerwashing",
-    "ownerName": "Brian Dunleavy",
     "yearsInBusiness": 22,
     "phone": "(219) 741-0481",
     "secondaryPhone": "(708) 707-8239",
@@ -23,7 +22,7 @@
       "Lakeside, MI"
     ],
     "hours": [],
-    "hoursNote": "Open seven days a week. Call or send a request and we'll get back to you.",
+    "hoursNote": "Open seven days a week.",
     "social": {
       "facebook": "",
       "instagram": "",
@@ -31,6 +30,11 @@
       "yelp": "",
       "nextdoor": "",
       "youtube": ""
+    },
+    "bbb": {
+      "verified": false,
+      "text": "5-Star Customer Rating on BBB",
+      "profileUrl": ""
     }
   },
   "branding": {
@@ -61,11 +65,5 @@
     "description": "",
     "ogImage": "",
     "locale": "en_US"
-  },
-  "form": {
-    "provider": "demo",
-    "formspreeId": "",
-    "webhookUrl": "",
-    "showDemoNotice": true
   }
 }

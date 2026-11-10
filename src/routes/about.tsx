@@ -5,7 +5,7 @@ import { PageHero } from "@/components/painting/page-hero";
 import { Trust } from "@/components/painting/trust";
 import { WhyChooseUs } from "@/components/painting/why-choose-us";
 import { FinalCta } from "@/components/painting/final-cta";
-import { BUSINESS_NAME, OWNER_NAME } from "@/lib/site-config";
+import { BUSINESS_NAME } from "@/lib/site-config";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/about")({
@@ -25,11 +25,7 @@ function AboutPage() {
       <PageHero
         eyebrow="About Us"
         title="Locally Operated Painting & Power Washing"
-        description={
-          OWNER_NAME
-            ? `Owned and operated by ${OWNER_NAME} in Michigan City, Indiana.`
-            : "Based in Michigan City, Indiana."
-        }
+        description="Painting and power washing for homeowners in Michigan City, Indiana and nearby Lake Michigan communities."
       />
       <Trust />
       <WhyChooseUs />

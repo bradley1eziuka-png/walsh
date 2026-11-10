@@ -35,12 +35,20 @@ export const siteConfigSchema = z.object({
     phone: z.string().min(7),
     // Optional second number, shown as an alternative contact number.
     secondaryPhone: optionalText,
-    ownerName: optionalText,
     legalName: optionalText,
     yearsInBusiness: z.number().int().optional(),
     // Set false to keep the street address out of the page text and structured data.
     showStreetAddress: z.boolean().default(false),
     hoursNote: optionalText,
+    // Shown in the hero, Why Choose Us, About and footer ONLY when verified is true.
+    // Set it after confirming the rating on the business's real BBB profile.
+    bbb: z
+      .object({
+        verified: z.boolean().default(false),
+        text: optionalText,
+        profileUrl: optionalText,
+      })
+      .default({}),
     email: optionalText,
     address: z
       .object({
@@ -137,16 +145,6 @@ export const siteConfigSchema = z.object({
       description: optionalText,
       ogImage: optionalText,
       locale: z.string().default("en_US"),
-    })
-    .default({}),
-
-  form: z
-    .object({
-      // demo = not connected (never reports success). See README → Estimate form.
-      provider: z.enum(["demo", "formspree", "ghl-webhook"]).default("demo"),
-      formspreeId: optionalText,
-      webhookUrl: optionalText,
-      showDemoNotice: z.boolean().default(true),
     })
     .default({}),
 });

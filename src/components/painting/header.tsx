@@ -126,8 +126,8 @@ export function Header() {
             <Phone className="size-4 text-accent" />
             {BUSINESS_PHONE}
           </a>
-          <a href="/#estimate" className={ctaButton({ variant: "gold", size: "sm" })}>
-            Request an Estimate
+          <a href={BUSINESS_PHONE_TEL} className={ctaButton({ variant: "gold", size: "sm" })}>
+            Call for an Estimate
           </a>
         </div>
 
@@ -231,11 +231,11 @@ export function Header() {
                 {BUSINESS_PHONE}
               </a>
               <a
-                href="/#estimate"
+                href={BUSINESS_PHONE_TEL}
                 onClick={() => setOpen(false)}
                 className={cn(ctaButton({ variant: "gold", size: "md" }), "mt-3 w-full")}
               >
-                Request an Estimate
+                Call for an Estimate
               </a>
             </div>
           </div>

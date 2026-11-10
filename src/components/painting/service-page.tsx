@@ -47,8 +47,8 @@ export function ServicePage({ service }: { service: ServiceConfig }) {
             {service.shortDescription}
           </p>
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <a href="/#estimate" className={ctaButton({ variant: "gold", size: "lg" })}>
-              Request an Estimate
+            <a href={BUSINESS_PHONE_TEL} className={ctaButton({ variant: "gold", size: "lg" })}>
+              Call for an Estimate
               <ArrowRight className="size-4" />
             </a>
             <a
@@ -83,8 +83,8 @@ export function ServicePage({ service }: { service: ServiceConfig }) {
               ))}
             </ul>
             <div className="mt-8">
-              <a href="/#estimate" className={ctaButton({ variant: "solid", size: "md" })}>
-                Request an Estimate
+              <a href={BUSINESS_PHONE_TEL} className={ctaButton({ variant: "solid", size: "md" })}>
+                Call for an Estimate
                 <ArrowRight className="size-4" />
               </a>
             </div>
@@ -213,14 +213,14 @@ export function ServicePage({ service }: { service: ServiceConfig }) {
         </div>
         <div className="mx-auto max-w-4xl px-6 py-20 text-center sm:py-24 lg:py-28">
           <h2 className="font-display text-balance text-3xl font-semibold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl">
-            Ready to Request an Estimate?
+            Ready to Call for an Estimate?
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-white/75">
             Tell us about your property and we'll follow up to talk through the details.
           </p>
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <a href="/#estimate" className={ctaButton({ variant: "gold", size: "lg" })}>
-              Request an Estimate
+            <a href={BUSINESS_PHONE_TEL} className={ctaButton({ variant: "gold", size: "lg" })}>
+              Call for an Estimate
               <ArrowRight className="size-4" />
             </a>
             <a

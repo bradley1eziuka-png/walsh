@@ -33,8 +33,8 @@ export function FinalCta() {
         </p>
 
         <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <a href="/#estimate" className={ctaButton({ variant: "gold", size: "lg" })}>
-            Request an Estimate
+          <a href={BUSINESS_PHONE_TEL} className={ctaButton({ variant: "gold", size: "lg" })}>
+            Call for an Estimate
             <ArrowRight className="size-4" />
           </a>
           <a

@@ -2,6 +2,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 
 import { siteConfig } from "@/config";
 import {
+  BBB,
   BUSINESS_EMAIL,
   BUSINESS_LEGAL_NAME,
   BUSINESS_PHONE,
@@ -140,6 +141,22 @@ export function Footer() {
                 </a>
               </p>
             )}
+            {BBB && (
+              <p className="mt-3 text-sm font-semibold text-white/85">
+                {BBB.url ? (
+                  <a
+                    href={BBB.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline transition-colors hover:text-accent"
+                  >
+                    {BBB.text}
+                  </a>
+                ) : (
+                  BBB.text
+                )}
+              </p>
+            )}
             <ContactDetails />
           </div>
 
@@ -178,10 +195,10 @@ export function Footer() {
               ))}
               <li>
                 <a
-                  href="/#estimate"
+                  href={BUSINESS_PHONE_TEL}
                   className="text-sm text-white/75 transition-colors hover:text-accent"
                 >
-                  Request an Estimate
+                  Call for an Estimate
                 </a>
               </li>
             </ul>

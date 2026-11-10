@@ -21,8 +21,8 @@ export const DEFAULT_CONTENT = {
   },
   faqs: [
     {
-      q: "How do I request an estimate?",
-      a: "Use the estimate form on this site or call (219) 741-0481. Tell us what you'd like painted or cleaned and where the property is, and we'll follow up to talk through the details.",
+      q: "How do I get an estimate?",
+      a: "Give us a call at (219) 741-0481. Tell us what you'd like painted or cleaned and where the property is, and we'll talk through the details.",
     },
     {
       q: "Which areas do you serve?",
@@ -34,7 +34,7 @@ export const DEFAULT_CONTENT = {
     },
     {
       q: "Do you do interior painting too?",
-      a: "Yes. Exterior painting and power washing are our main focus, but we also paint interiors. Let us know what you have in mind when you request an estimate.",
+      a: "Yes. Exterior painting and power washing are our main focus, but we also paint interiors. Let us know what you have in mind when you call.",
     },
     {
       q: "What if repairs are needed before painting?",
@@ -45,11 +45,11 @@ export const DEFAULT_CONTENT = {
     "Painting and power washing for homeowners in Michigan City, Indiana and the surrounding Lake Michigan communities. 22 years of careful preparation and dependable service.",
   finalCta: {
     title: "Ready for a Fresh, Clean Look?",
-    body: "Tell us about your house, deck, or driveway and we'll follow up to talk through the details. Estimates are easy to request.",
+    body: "Give us a call to talk about your house, deck, or driveway.",
   },
   seo: {
     description:
-      "Walsh Painting & Powerwashing: 22 years of exterior painting, power washing, and deck services in Michigan City, IN, Chesterton, Valparaiso, Ogden Dunes, and Lakeside, MI. Request an estimate.",
+      "Walsh Painting & Powerwashing: 22 years of exterior painting, power washing, and deck services in Michigan City, IN, Chesterton, Valparaiso, Ogden Dunes, and Lakeside, MI. Call for an estimate.",
   },
 } as const;
 

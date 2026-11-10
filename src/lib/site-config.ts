@@ -13,7 +13,11 @@ export const BUSINESS_PHONE = business.phone;
 export const BUSINESS_EMAIL = business.email;
 export const BUSINESS_PHONE_2 = business.secondaryPhone;
 export const BUSINESS_LEGAL_NAME = business.legalName || business.name;
-export const OWNER_NAME = business.ownerName;
+// BBB rating mention — null until business.bbb.verified is set in site.config.json.
+export const BBB =
+  business.bbb.verified && business.bbb.text
+    ? { text: business.bbb.text, url: business.bbb.profileUrl }
+    : null;
 export const YEARS = business.yearsInBusiness;
 
 function toTel(display: string) {

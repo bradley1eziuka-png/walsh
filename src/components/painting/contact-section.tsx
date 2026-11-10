@@ -10,9 +10,8 @@ import {
 import { SectionHeading } from "./section-heading";
 import { ctaButton } from "./buttons";
 
-// The homepage "Contact" section — a confident call-to-call block that points
-// to the estimate form in the hero. The form itself lives in the hero so the
-// page never shows two identical forms.
+// The homepage "Contact" section — a confident call block that points
+// to the call card in the hero.
 export function ContactSection() {
   return (
     <section id="contact" className="section-pad scroll-mt-24 bg-background">
@@ -20,7 +19,7 @@ export function ContactSection() {
         <SectionHeading
           eyebrow="Contact"
           title="Let's Talk About Your Project"
-          description="Request an estimate online or give us a call. We serve Michigan City, Chesterton, Valparaiso, Ogden Dunes, Lakeside, MI, and nearby Lake Michigan communities."
+          description="Give us a call to discuss your project. We serve Michigan City, Chesterton, Valparaiso, Ogden Dunes, Lakeside, MI, and nearby Lake Michigan communities."
         />
 
         <div className="mx-auto mt-10 max-w-lg rounded-2xl border border-border bg-secondary/50 p-8 shadow-[0_2px_20px_-14px_rgba(0,0,0,0.14)]">
@@ -63,8 +62,8 @@ export function ContactSection() {
         </div>
 
         <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <a href="/#estimate" className={ctaButton({ variant: "gold", size: "lg" })}>
-            Request an Estimate
+          <a href={BUSINESS_PHONE_TEL} className={ctaButton({ variant: "gold", size: "lg" })}>
+            Call for an Estimate
             <ArrowRight className="size-4" />
           </a>
           <a href={BUSINESS_PHONE_TEL} className={ctaButton({ variant: "solid", size: "lg" })}>

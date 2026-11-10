@@ -1,5 +1,6 @@
-import { Award, Droplets, Home, MapPin, Paintbrush } from "lucide-react";
+import { Award, Star, Droplets, Home, MapPin, Paintbrush } from "lucide-react";
 
+import { BBB } from "@/lib/site-config";
 import { SectionHeading } from "./section-heading";
 
 const REASONS = [
@@ -30,6 +31,18 @@ const REASONS = [
   },
 ];
 
+// Only shown once the BBB rating is verified (site.config.json → business.bbb).
+const ALL_REASONS = BBB
+  ? [
+      ...REASONS,
+      {
+        icon: Star,
+        title: BBB.text,
+        description: "Customer rating from the Better Business Bureau.",
+      },
+    ]
+  : REASONS;
+
 export function WhyChooseUs() {
   return (
     <section id="why-choose-us" className="section-pad scroll-mt-24 bg-secondary/40">
@@ -41,7 +54,7 @@ export function WhyChooseUs() {
         />
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-5 lg:gap-5">
-          {REASONS.map((reason) => {
+          {ALL_REASONS.map((reason) => {
             const Icon = reason.icon;
             return (
               <div

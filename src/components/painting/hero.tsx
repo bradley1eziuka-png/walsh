@@ -1,6 +1,7 @@
 import { ArrowRight, Check, Phone } from "lucide-react";
 
 import {
+  BBB,
   BUSINESS_PHONE,
   BUSINESS_PHONE_2,
   BUSINESS_PHONE_2_TEL,
@@ -9,7 +10,7 @@ import {
 } from "@/lib/site-config";
 import { IMAGES } from "@/lib/site-images";
 import { ctaButton } from "./buttons";
-import { EstimateFormCard } from "./estimate-form";
+import { CallCard } from "./call-card";
 
 const TRUST_POINTS = [
   "22 Years in Business",
@@ -19,8 +20,8 @@ const TRUST_POINTS = [
 ];
 
 // Two-column hero: business name + tagline + description + CTAs on the left,
-// premium estimate form card on the right. Stacks vertically on mobile in
-// the order: headline/description → CTAs → form.
+// call-for-an-estimate card on the right. Stacks vertically on mobile in
+// the order: headline/description → CTAs → call card.
 export function Hero() {
   return (
     <section
@@ -61,8 +62,8 @@ export function Hero() {
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <a href="#estimate" className={ctaButton({ variant: "gold", size: "lg" })}>
-                Request an Estimate
+              <a href={BUSINESS_PHONE_TEL} className={ctaButton({ variant: "gold", size: "lg" })}>
+                Call for an Estimate
                 <ArrowRight className="size-4" />
               </a>
               <a
@@ -87,7 +88,7 @@ export function Hero() {
             )}
 
             <ul className="mt-6 grid gap-2 text-sm font-semibold text-white sm:grid-cols-2">
-              {TRUST_POINTS.map((point) => (
+              {[...TRUST_POINTS, ...(BBB ? [BBB.text] : [])].map((point) => (
                 <li key={point} className="flex items-center gap-2">
                   <Check className="size-4 shrink-0 text-accent" />
                   {point}
@@ -96,9 +97,9 @@ export function Hero() {
             </ul>
           </div>
 
-          {/* Right column ~40% — premium estimate form card */}
+          {/* Right column ~40% — call card */}
           <div className="lg:pl-4">
-            <EstimateFormCard id="estimate" />
+            <CallCard />
           </div>
         </div>
       </div>

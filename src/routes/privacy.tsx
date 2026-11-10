@@ -13,7 +13,7 @@ export const Route = createFileRoute("/privacy")({
   head: () =>
     pageHead({
       title: `Privacy Policy | ${BUSINESS_NAME}`,
-      description: `How ${BUSINESS_NAME} handles information submitted through this website.`,
+      description: `How ${BUSINESS_NAME} handles information in connection with this website.`,
       path: "/privacy",
     }),
   component: PrivacyPage,
@@ -29,38 +29,19 @@ function PrivacyPage() {
       </p>
 
       <h2>Information you give us</h2>
-      <p>When you submit the estimate request form, you may provide:</p>
-      <ul>
-        <li>Your name and phone number (required)</li>
-        <li>Your email address (optional)</li>
-        <li>The service you need, your project location, and project details</li>
-        <li>Whether you agree to receive text messages (optional; see below)</li>
-      </ul>
       <p>
-        If you call or email us, we receive whatever information you share with us in that
-        communication.
+        This website does not have an online estimate or contact form, and it does not collect
+        personal information through the site itself. Estimates are handled by phone.
+      </p>
+      <p>
+        If you call or email us, we receive whatever information you choose to share in that
+        communication, such as your name, phone number, email address, and project details.
       </p>
 
       <h2>How we use it</h2>
       <p>
-        We use this information to respond to your request, provide an estimate, schedule and
-        perform work, and follow up about your project. We do not sell your personal information.
-      </p>
-
-      <h2>How form submissions are delivered</h2>
-      <p>
-        Form submissions are sent from your browser to a third-party form-handling service, which
-        forwards them to our business inbox. That service processes the submission on our behalf and
-        under its own privacy policy.
-      </p>
-
-      <h2>Text messages</h2>
-      <p>
-        Checking the optional text-message box means you agree that we may text you at the number
-        you provided about your estimate request. Message and data rates may apply. Consent is not
-        required to request an estimate or to hire us, and the box is never pre-checked. To stop
-        receiving texts, reply STOP or tell us directly. We do not share your phone number with
-        third parties for their marketing.
+        We use that information to respond to you, provide an estimate, schedule and perform work,
+        and follow up about your project. We do not sell your personal information.
       </p>
 
       <h2>Cookies, analytics, and fonts</h2>
@@ -70,15 +51,18 @@ function PrivacyPage() {
         and Google may receive your IP address as part of that request.
       </p>
 
+      <h2>Links to other sites</h2>
+      <p>The site may link to other websites. Those sites have their own privacy practices.</p>
+
       <h2>How long we keep information</h2>
       <p>
-        We keep estimate requests and related communications for as long as we reasonably need them
-        to respond to you, perform work, and keep business records.
+        We keep records of calls, emails, and jobs for as long as we reasonably need them to respond
+        to you, perform work, and keep business records.
       </p>
 
       <h2>Your choices</h2>
       <p>
-        You can ask us to update or delete the information you sent us by contacting us using the
+        You can ask us to update or delete information you sent us by contacting us using the
         details below. We may need to keep certain records as part of running our business.
       </p>
 

@@ -3,8 +3,8 @@ import { SectionHeading } from "./section-heading";
 const STEPS = [
   {
     number: "01",
-    title: "Request an Estimate",
-    description: "Send the form or call us. Tell us what you'd like painted or cleaned.",
+    title: "Give Us a Call",
+    description: "Tell us what you'd like painted or cleaned and where the property is.",
   },
   {
     number: "02",

@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 
-import { COPY } from "@/lib/site-config";
+import { BBB, BUSINESS_PHONE_TEL, COPY, YEARS } from "@/lib/site-config";
 import { IMAGES } from "@/lib/site-images";
 import { SectionHeading } from "./section-heading";
 import { ctaButton } from "./buttons";
@@ -36,9 +36,21 @@ export function Trust() {
               {para}
             </p>
           ))}
+          {BBB && (
+            <p className="mt-5 text-base font-semibold text-primary">
+              {BBB.url ? (
+                <a href={BBB.url} target="_blank" rel="noopener noreferrer" className="underline">
+                  {BBB.text}
+                </a>
+              ) : (
+                BBB.text
+              )}
+              , alongside {YEARS} years of experience.
+            </p>
+          )}
           <div className="mt-8">
-            <a href="/#estimate" className={ctaButton({ variant: "solid", size: "md" })}>
-              Request an Estimate
+            <a href={BUSINESS_PHONE_TEL} className={ctaButton({ variant: "solid", size: "md" })}>
+              Call for an Estimate
               <ArrowRight className="size-4" />
             </a>
           </div>

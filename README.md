@@ -13,16 +13,14 @@ npm run check      # pre-launch checklist: flags demo form, leftover template st
 ```
 
 ## Before launch
-- **Form delivery**: set `form.provider` to `formspree` + `formspreeId` (create a free form at formspree.io
-  pointed at paintdows@yahoo.com), or `ghl-webhook` + `webhookUrl`. Until then the form runs in demo mode
-  and never reports success.
-- **SMS**: nothing sends texts today. Texting needs an external service (e.g. GoHighLevel/Twilio) with
-  carrier A2P 10DLC registration. The form already captures an optional, unchecked SMS consent value
-  (`sms_consent`) for that workflow.
+
+- **Estimates are by phone.** There are no online forms; every estimate CTA is a `tel:` link to (219) 741-0481.
+- **BBB rating**: hidden. `business.bbb.verified` is `false`. Set it to `true` (and fill `text` and
+  `profileUrl`) only after confirming a five-star customer rating on the business's real BBB profile.
+  Do not use the BBB logo or seal without authorization.
 - **Domain**: set `seo.siteUrl` (or the `SITE_URL` / `VITE_SITE_URL` env var) to enable canonical tags,
   OG URLs, sitemap.xml, and the robots.txt Sitemap line.
 - **Street address**: `business.showStreetAddress` is `false`. Set `true` only if the owner wants
-  430 Hayes Avenue shown publicly (footer, contact page, structured data).
+  430 Hayes Avenue shown publicly.
 - **Photos**: images in `public/images` (except `walsh-mascot*.png`, `power-washing.jpg`) are generic
-  placeholders; replace via `branding.images` in the config with real Walsh project photos.
-- **BBB**: the supplied logo shows a BBB badge; it is intentionally cropped out until verified.
+  placeholders; replace via `branding.images` with real Walsh project photos.

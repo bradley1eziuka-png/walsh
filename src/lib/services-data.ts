@@ -41,8 +41,8 @@ export interface ServiceConfig {
 const SHARED_PROCESS: ServiceStep[] = [
   {
     number: "01",
-    title: "Request an Estimate",
-    description: "Tell us about the property and what you'd like done, by form or by phone.",
+    title: "Give Us a Call",
+    description: "Tell us about the property and what you'd like done.",
   },
   {
     number: "02",
@@ -68,7 +68,7 @@ const BASE_SERVICES = {
       "Residential exterior painting built on proper preparation, careful workmanship, and respect for your property.",
     seoTitle: "Exterior Painting in Michigan City, IN",
     seoDescription:
-      "Exterior house painting in Michigan City, IN, from Walsh Painting & Powerwashing. 22 years of careful prep and workmanship. Serving Northwest Indiana. Request an estimate.",
+      "Exterior house painting in Michigan City, IN, from Walsh Painting & Powerwashing. 22 years of careful prep and workmanship. Serving Northwest Indiana. Call for an estimate.",
     includes: [
       "Residential exterior painting",
       "House painting",
@@ -147,7 +147,7 @@ const BASE_SERVICES = {
       "Professional power washing for houses, decks, driveways, and exterior surfaces, done with the surface and surrounding property in mind.",
     seoTitle: "Power Washing & Pressure Washing in Michigan City, IN",
     seoDescription:
-      "Power washing and pressure washing in Michigan City, IN: houses, decks, driveways, and exterior surfaces. 22 years of experience. Request an estimate from Walsh Painting & Powerwashing.",
+      "Power washing and pressure washing in Michigan City, IN: houses, decks, driveways, and exterior surfaces. 22 years of experience. Call for an estimate from Walsh Painting & Powerwashing.",
     includes: [
       "House power washing",
       "Deck power washing",
@@ -192,7 +192,7 @@ const BASE_SERVICES = {
     faqs: [
       {
         q: "What can you power wash?",
-        a: "Houses, decks, driveways, and other exterior surfaces. If you have something else in mind, ask when you request an estimate.",
+        a: "Houses, decks, driveways, and other exterior surfaces. If you have something else in mind, ask when you call.",
       },
       {
         q: "Will power washing damage my property?",
@@ -216,7 +216,7 @@ const BASE_SERVICES = {
       "Deck power washing, staining, painting, and preparation to bring a weathered deck back to life.",
     seoTitle: "Deck Staining & Deck Power Washing in Michigan City, IN",
     seoDescription:
-      "Deck staining, deck painting, and deck power washing in Michigan City, IN and nearby Lake Michigan communities. Request an estimate from Walsh Painting & Powerwashing.",
+      "Deck staining, deck painting, and deck power washing in Michigan City, IN and nearby Lake Michigan communities. Call for an estimate from Walsh Painting & Powerwashing.",
     includes: [
       "Deck power washing",
       "Deck staining",
@@ -265,7 +265,7 @@ const BASE_SERVICES = {
       },
       {
         q: "Should I stain or paint my deck?",
-        a: "It depends on the condition of the wood and the look you want. We're happy to talk through the options when you request an estimate.",
+        a: "It depends on the condition of the wood and the look you want. We're happy to talk through the options when you call.",
       },
       {
         q: "What if my deck needs repairs?",
@@ -285,7 +285,7 @@ const BASE_SERVICES = {
       "Interior painting for homeowners, done carefully, with attention to preparation and a tidy finish.",
     seoTitle: "Interior Painting in Michigan City, IN",
     seoDescription:
-      "Interior house painting in Michigan City, IN and Northwest Indiana from Walsh Painting & Powerwashing. Careful prep and clean work. Request an estimate.",
+      "Interior house painting in Michigan City, IN and Northwest Indiana from Walsh Painting & Powerwashing. Careful prep and clean work. Call for an estimate.",
     includes: ["Interior painting", "Careful preparation", "Tidy, protected work areas"],
     explanation: {
       title: "A Fresh Look Inside",
@@ -341,7 +341,7 @@ const BASE_SERVICES = {
       "When repairs are needed before painting, we can coordinate with experienced carpenters to help prepare your property for the job.",
     seoTitle: "Home & Deck Repairs Before Painting in Michigan City, IN",
     seoDescription:
-      "Surface preparation and coordinated carpentry repairs before painting in Michigan City, IN. Walsh Painting & Powerwashing works with experienced carpenters. Request an estimate.",
+      "Surface preparation and coordinated carpentry repairs before painting in Michigan City, IN. Walsh Painting & Powerwashing works with experienced carpenters. Call for an estimate.",
     includes: [
       "Exterior surface preparation",
       "Cleaning before painting",
@@ -385,7 +385,7 @@ const BASE_SERVICES = {
       },
       {
         q: "How do I know if repairs are needed?",
-        a: "Describe the condition of your house or deck when you request an estimate, and we'll talk through what to expect.",
+        a: "Describe the condition of your house or deck when you call, and we'll talk through what to expect.",
       },
     ],
     heroImage: IMAGES.galleryExterior,
