@@ -21,7 +21,7 @@ if (!cfg.seo.siteUrl && !process.env.SITE_URL && !process.env.VITE_SITE_URL)
 if (!cfg.business.address.city)
   notes.push("business.address.city is empty — titles and hero pill aren't localized");
 if (!cfg.business.bbb?.verified)
-  notes.push("business.bbb.verified is false — no BBB rating is shown anywhere (verify first)");
+  notes.push("business.bbb.verified is false — no BBB credentials are shown");
 if (!cfg.business.email) notes.push("business.email is empty — email is omitted from the footer");
 if (!cfg.branding.logo.src) notes.push("no logo set — the paintbrush mark is shown");
 if (cfg.content.testimonials.length === 0)

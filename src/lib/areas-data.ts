@@ -26,10 +26,10 @@ export const AREAS: AreaConfig[] = [
     homeBase: true,
     seoTitle: "Painting Contractor in Michigan City, IN | Power Washing & Deck Staining",
     seoDescription:
-      "Painting contractor in Michigan City, IN. Exterior painting, house painting, power washing, and deck staining from Walsh Painting & Powerwashing, based here for 22 years.",
+      "Painting contractor in Michigan City, IN. Exterior painting, house painting, power washing, and deck staining from Walsh Painting & Powerwashing, based here for 23 years.",
     headline: "Painting & Power Washing in Michigan City, Indiana",
     intro:
-      "Michigan City is home base for Walsh Painting & Powerwashing. For 22 years we've painted and cleaned homes here, and most of our customers are in Northwest Indiana.",
+      "Michigan City is home base for Walsh Painting & Powerwashing. For 23 years we've painted and cleaned homes here, and most of our customers are in Northwest Indiana.",
     paragraphs: [
       "Living on the lakeshore is great, but Lake Michigan weather is hard on a home's exterior. Wind-driven moisture, sun, and freeze-and-thaw winters wear on paint, siding, and decks. If you're looking for a painting contractor in Michigan City, we handle exterior painting, house painting, deck painting and staining, and professional power washing.",
       "Many homeowners start with a good cleaning. Power washing siding, a deck, or a driveway can make a property look noticeably fresher, and it's also the right first step before painting or staining. We clean with the surface in mind, protect the surrounding property, and clean up when we're finished.",

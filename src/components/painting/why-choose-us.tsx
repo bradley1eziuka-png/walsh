@@ -1,4 +1,4 @@
-import { Award, Star, Droplets, Home, MapPin, Paintbrush } from "lucide-react";
+import { Award, ShieldCheck, Droplets, Home, MapPin, Paintbrush } from "lucide-react";
 
 import { BBB } from "@/lib/site-config";
 import { SectionHeading } from "./section-heading";
@@ -6,7 +6,7 @@ import { SectionHeading } from "./section-heading";
 const REASONS = [
   {
     icon: Award,
-    title: "22 Years of Experience",
+    title: "23 Years of Experience",
     description: "An established local business with more than two decades of experience.",
   },
   {
@@ -31,14 +31,25 @@ const REASONS = [
   },
 ];
 
-// Only shown once the BBB rating is verified (site.config.json → business.bbb).
-const ALL_REASONS = BBB
+type Reason = {
+  icon: typeof Award;
+  title: string;
+  description: string;
+  href?: string;
+  note?: string;
+};
+
+// The BBB item only appears once the credentials are verified
+// (site.config.json → business.bbb).
+const ALL_REASONS: Reason[] = BBB
   ? [
       ...REASONS,
       {
-        icon: Star,
-        title: BBB.text,
-        description: "Customer rating from the Better Business Bureau.",
+        icon: ShieldCheck,
+        title: BBB.title,
+        description: BBB.description,
+        href: BBB.url,
+        note: BBB.note,
       },
     ]
   : REASONS;
@@ -53,7 +64,9 @@ export function WhyChooseUs() {
           description="Proper preparation, careful work, and respect for your property."
         />
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-5 lg:gap-5">
+        <div
+          className={`mt-14 grid gap-6 sm:grid-cols-2 lg:gap-5 ${BBB ? "lg:grid-cols-3" : "lg:grid-cols-5"}`}
+        >
           {ALL_REASONS.map((reason) => {
             const Icon = reason.icon;
             return (
@@ -70,6 +83,21 @@ export function WhyChooseUs() {
                 <p className="mt-3 text-[0.9rem] leading-relaxed text-muted-foreground">
                   {reason.description}
                 </p>
+                {reason.href && (
+                  <a
+                    href={reason.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-3 text-sm font-semibold text-brand-text underline underline-offset-4"
+                  >
+                    View our BBB profile
+                  </a>
+                )}
+                {reason.note && (
+                  <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
+                    {reason.note}
+                  </p>
+                )}
               </div>
             );
           })}

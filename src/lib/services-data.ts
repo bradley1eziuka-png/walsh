@@ -68,7 +68,7 @@ const BASE_SERVICES = {
       "Residential exterior painting built on proper preparation, careful workmanship, and respect for your property.",
     seoTitle: "Exterior Painting in Michigan City, IN",
     seoDescription:
-      "Exterior house painting in Michigan City, IN, from Walsh Painting & Powerwashing. 22 years of careful prep and workmanship. Serving Northwest Indiana. Call for an estimate.",
+      "Exterior house painting in Michigan City, IN, from Walsh Painting & Powerwashing. 23 years of careful prep and workmanship. Serving Northwest Indiana. Call for an estimate.",
     includes: [
       "Residential exterior painting",
       "House painting",
@@ -147,7 +147,7 @@ const BASE_SERVICES = {
       "Professional power washing for houses, decks, driveways, and exterior surfaces, done with the surface and surrounding property in mind.",
     seoTitle: "Power Washing & Pressure Washing in Michigan City, IN",
     seoDescription:
-      "Power washing and pressure washing in Michigan City, IN: houses, decks, driveways, and exterior surfaces. 22 years of experience. Call for an estimate from Walsh Painting & Powerwashing.",
+      "Power washing and pressure washing in Michigan City, IN: houses, decks, driveways, and exterior surfaces. 23 years of experience. Call for an estimate from Walsh Painting & Powerwashing.",
     includes: [
       "House power washing",
       "Deck power washing",

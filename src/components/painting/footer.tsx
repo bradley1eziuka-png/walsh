@@ -142,20 +142,16 @@ export function Footer() {
               </p>
             )}
             {BBB && (
-              <p className="mt-3 text-sm font-semibold text-white/85">
-                {BBB.url ? (
-                  <a
-                    href={BBB.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline transition-colors hover:text-accent"
-                  >
-                    {BBB.text}
-                  </a>
-                ) : (
-                  BBB.text
-                )}
-              </p>
+              <div className="mt-3 text-sm">
+                <a
+                  href={BBB.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-white/85 underline transition-colors hover:text-accent"
+                >
+                  {BBB.heroText}
+                </a>
+              </div>
             )}
             <ContactDetails />
           </div>

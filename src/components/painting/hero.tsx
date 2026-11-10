@@ -1,4 +1,4 @@
-import { ArrowRight, Check, Phone } from "lucide-react";
+import { ArrowRight, Check, Phone, ShieldCheck } from "lucide-react";
 
 import {
   BBB,
@@ -13,7 +13,7 @@ import { ctaButton } from "./buttons";
 import { CallCard } from "./call-card";
 
 const TRUST_POINTS = [
-  "22 Years in Business",
+  "23 Years in Business",
   "Locally Operated",
   "Painting & Power Washing Specialists",
   "Serving Northwest Indiana",
@@ -88,13 +88,19 @@ export function Hero() {
             )}
 
             <ul className="mt-6 grid gap-2 text-sm font-semibold text-white sm:grid-cols-2">
-              {[...TRUST_POINTS, ...(BBB ? [BBB.text] : [])].map((point) => (
+              {TRUST_POINTS.map((point) => (
                 <li key={point} className="flex items-center gap-2">
                   <Check className="size-4 shrink-0 text-accent" />
                   {point}
                 </li>
               ))}
             </ul>
+            {BBB && (
+              <p className="mt-5 inline-flex items-center gap-2 rounded-full border border-accent/60 bg-accent/15 px-4 py-2 text-sm font-bold text-white">
+                <ShieldCheck className="size-4 shrink-0 text-accent" />
+                {BBB.heroText}
+              </p>
+            )}
           </div>
 
           {/* Right column ~40% — call card */}

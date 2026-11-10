@@ -3,7 +3,7 @@
     "name": "Walsh Painting & Powerwashing",
     "shortName": "Walsh Painting & Powerwashing",
     "legalName": "Walsh Painting and Powerwashing",
-    "yearsInBusiness": 22,
+    "yearsInBusiness": 23,
     "phone": "(219) 741-0481",
     "secondaryPhone": "(708) 707-8239",
     "email": "paintdows@yahoo.com",
@@ -32,9 +32,11 @@
       "youtube": ""
     },
     "bbb": {
-      "verified": false,
-      "text": "5-Star Customer Rating on BBB",
-      "profileUrl": ""
+      "verified": true,
+      "heroText": "A+ Rated \u00b7 BBB Accredited",
+      "title": "BBB Accredited \u00b7 A+ Rating",
+      "description": "Recognized by the Better Business Bureau with an A+ business rating.",
+      "profileUrl": "https://www.bbb.org/us/in/michigan-city/profile/painting-contractors/dunivan-painting-and-powerwashing-0352-90103363"
     }
   },
   "branding": {

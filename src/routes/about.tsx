@@ -13,7 +13,7 @@ export const Route = createFileRoute("/about")({
     pageHead({
       title: `About ${BUSINESS_NAME} | Michigan City Painting Contractor`,
       description:
-        "Walsh Painting & Powerwashing has 22 years of experience painting and power washing homes in Michigan City, IN and nearby Lake Michigan communities.",
+        "Walsh Painting & Powerwashing has 23 years of experience painting and power washing homes in Michigan City, IN and nearby Lake Michigan communities.",
       path: "/about",
     }),
   component: AboutPage,

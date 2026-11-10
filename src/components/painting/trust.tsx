@@ -37,16 +37,20 @@ export function Trust() {
             </p>
           ))}
           {BBB && (
-            <p className="mt-5 text-base font-semibold text-primary">
-              {BBB.url ? (
-                <a href={BBB.url} target="_blank" rel="noopener noreferrer" className="underline">
-                  {BBB.text}
+            <div className="mt-5">
+              <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
+                Along with {YEARS} years of experience, we're a{" "}
+                <a
+                  href={BBB.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-brand-text underline underline-offset-4"
+                >
+                  BBB Accredited Business with an A+ BBB rating
                 </a>
-              ) : (
-                BBB.text
-              )}
-              , alongside {YEARS} years of experience.
-            </p>
+                .
+              </p>
+            </div>
           )}
           <div className="mt-8">
             <a href={BUSINESS_PHONE_TEL} className={ctaButton({ variant: "solid", size: "md" })}>

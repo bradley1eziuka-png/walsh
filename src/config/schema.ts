@@ -40,12 +40,17 @@ export const siteConfigSchema = z.object({
     // Set false to keep the street address out of the page text and structured data.
     showStreetAddress: z.boolean().default(false),
     hoursNote: optionalText,
-    // Shown in the hero, Why Choose Us, About and footer ONLY when verified is true.
-    // Set it after confirming the rating on the business's real BBB profile.
+    // BBB credentials (A+ rating, accreditation). Shown only when verified is true.
+    // These are BBB business ratings, not customer-review stars. Do not add the BBB
+    // logo or seal without BBB's permission.
     bbb: z
       .object({
         verified: z.boolean().default(false),
-        text: optionalText,
+        heroText: optionalText,
+        title: optionalText,
+        description: optionalText,
+        // Explains why the profile name differs from the site name.
+        note: optionalText,
         profileUrl: optionalText,
       })
       .default({}),

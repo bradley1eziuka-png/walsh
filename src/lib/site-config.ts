@@ -13,10 +13,16 @@ export const BUSINESS_PHONE = business.phone;
 export const BUSINESS_EMAIL = business.email;
 export const BUSINESS_PHONE_2 = business.secondaryPhone;
 export const BUSINESS_LEGAL_NAME = business.legalName || business.name;
-// BBB rating mention — null until business.bbb.verified is set in site.config.json.
+// BBB credentials — null unless business.bbb.verified is set in site.config.json.
 export const BBB =
-  business.bbb.verified && business.bbb.text
-    ? { text: business.bbb.text, url: business.bbb.profileUrl }
+  business.bbb.verified && business.bbb.profileUrl
+    ? {
+        heroText: business.bbb.heroText,
+        title: business.bbb.title,
+        description: business.bbb.description,
+        note: business.bbb.note,
+        url: business.bbb.profileUrl,
+      }
     : null;
 export const YEARS = business.yearsInBusiness;
 

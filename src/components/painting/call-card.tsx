@@ -9,7 +9,7 @@ import {
 import { ctaButton } from "./buttons";
 
 const POINTS = [
-  "22 Years in Business",
+  "23 Years in Business",
   "Serving Michigan City & Surrounding Areas",
   "Open Seven Days a Week",
 ];
