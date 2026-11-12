@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 
+import { imgProps } from "@/lib/site-images";
 import { SERVICE_LIST } from "@/lib/services-data";
 import { SectionHeading } from "./section-heading";
 
@@ -26,7 +27,10 @@ export function Services() {
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <img
-                  src={service.heroImage}
+                  {...imgProps(
+                    service.heroImage,
+                    "(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw",
+                  )}
                   alt={service.heroAlt}
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"

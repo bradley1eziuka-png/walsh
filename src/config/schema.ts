@@ -19,6 +19,12 @@ export const IMAGE_KEYS = [
   "galleryKitchen",
   "galleryTrim",
   "trust",
+  "svcExterior",
+  "svcPowerWashing",
+  "svcDeck",
+  "svcInterior",
+  "svcRepairs",
+  "aboutWalsh",
 ] as const;
 export type ImageKey = (typeof IMAGE_KEYS)[number];
 

@@ -100,23 +100,18 @@ const BASE_SERVICES = {
     process: SHARED_PROCESS,
     gallery: [
       {
-        src: IMAGES.exterior,
-        alt: "Residential home exterior with clean siding and trim",
+        src: IMAGES.svcExterior,
+        alt: "Blue craftsman-style home with freshly painted siding, white trim and a landscaped entry",
         label: "Home Exterior",
       },
       {
-        src: IMAGES.galleryExterior,
-        alt: "Home with painted siding and trim",
-        label: "Siding & Trim",
+        src: IMAGES.svcRepairs,
+        alt: "Home exterior with windows masked and repaired siding prepped for painting",
+        label: "Prep & Repairs",
       },
       {
-        src: IMAGES.galleryTrim,
-        alt: "Close-up of crisp painted trim",
-        label: "Trim Detail",
-      },
-      {
-        src: IMAGES.powerWashing,
-        alt: "Walsh power washing mascot cleaning house siding",
+        src: IMAGES.svcPowerWashing,
+        alt: "Painter power washing vinyl siding before painting",
         label: "Prep Cleaning",
       },
     ],
@@ -134,8 +129,9 @@ const BASE_SERVICES = {
         a: "Weather and temperature matter for exterior finishes. Call us and we'll talk about timing for your project.",
       },
     ],
-    heroImage: IMAGES.exterior,
-    heroAlt: "Residential home exterior with clean siding and trim",
+    heroImage: IMAGES.svcExterior,
+    heroAlt:
+      "Blue craftsman-style home with freshly painted siding, white trim and a landscaped entry",
   },
 
   powerWashing: {
@@ -179,14 +175,14 @@ const BASE_SERVICES = {
     process: SHARED_PROCESS,
     gallery: [
       {
-        src: IMAGES.powerWashing,
-        alt: "Walsh power washing mascot cleaning house siding",
+        src: IMAGES.svcPowerWashing,
+        alt: "Worker power washing mildew from the siding of a home",
         label: "House Washing",
       },
       {
-        src: IMAGES.galleryExterior,
-        alt: "Home exterior",
-        label: "Exterior Surfaces",
+        src: IMAGES.svcDeck,
+        alt: "Wood deck being cleaned with a surface cleaner",
+        label: "Deck Cleaning",
       },
     ],
     faqs: [
@@ -203,8 +199,8 @@ const BASE_SERVICES = {
         a: "Yes. Cleaning the surface before painting is a common first step, and we offer both services.",
       },
     ],
-    heroImage: IMAGES.powerWashing,
-    heroAlt: "Walsh power washing mascot cleaning house siding",
+    heroImage: IMAGES.svcPowerWashing,
+    heroAlt: "Worker power washing mildew from the siding of a home",
   },
 
   deck: {
@@ -248,14 +244,14 @@ const BASE_SERVICES = {
     process: SHARED_PROCESS,
     gallery: [
       {
-        src: IMAGES.powerWashing,
-        alt: "Walsh power washing mascot",
-        label: "Cleaning",
+        src: IMAGES.svcDeck,
+        alt: "Wood deck being cleaned with a surface cleaner before staining",
+        label: "Deck Cleaning",
       },
       {
-        src: IMAGES.galleryExterior,
-        alt: "Home exterior",
-        label: "Outdoor Living",
+        src: IMAGES.svcPowerWashing,
+        alt: "Worker power washing the siding of a home",
+        label: "Surface Cleaning",
       },
     ],
     faqs: [
@@ -272,8 +268,8 @@ const BASE_SERVICES = {
         a: "When repairs are needed, we can coordinate with experienced carpenters before the finish is applied.",
       },
     ],
-    heroImage: IMAGES.deck,
-    heroAlt: "Home exterior",
+    heroImage: IMAGES.svcDeck,
+    heroAlt: "Wood deck being cleaned with a surface cleaner before staining",
   },
 
   interior: {
@@ -308,14 +304,9 @@ const BASE_SERVICES = {
     process: SHARED_PROCESS,
     gallery: [
       {
-        src: IMAGES.interior,
-        alt: "Freshly painted living room",
+        src: IMAGES.svcInterior,
+        alt: "Freshly painted living room with fireplace and bright windows",
         label: "Living Space",
-      },
-      {
-        src: IMAGES.galleryTrim,
-        alt: "Close-up of crisp painted trim",
-        label: "Trim Detail",
       },
     ],
     faqs: [
@@ -328,8 +319,8 @@ const BASE_SERVICES = {
         a: "Clearing the area helps. We'll talk through what's needed before we start.",
       },
     ],
-    heroImage: IMAGES.interior,
-    heroAlt: "Freshly painted living room",
+    heroImage: IMAGES.svcInterior,
+    heroAlt: "Freshly painted living room with fireplace and bright windows",
   },
 
   repairs: {
@@ -368,14 +359,14 @@ const BASE_SERVICES = {
     process: SHARED_PROCESS,
     gallery: [
       {
-        src: IMAGES.galleryExterior,
-        alt: "Home exterior",
-        label: "Exterior",
+        src: IMAGES.svcRepairs,
+        alt: "Home exterior with windows masked and repaired siding prepped for painting",
+        label: "Prep & Repairs",
       },
       {
-        src: IMAGES.powerWashing,
-        alt: "Walsh power washing mascot cleaning house siding",
-        label: "Cleaning",
+        src: IMAGES.svcExterior,
+        alt: "Finished home exterior with fresh paint",
+        label: "Finished Exterior",
       },
     ],
     faqs: [
@@ -388,8 +379,8 @@ const BASE_SERVICES = {
         a: "Describe the condition of your house or deck when you call, and we'll talk through what to expect.",
       },
     ],
-    heroImage: IMAGES.galleryExterior,
-    heroAlt: "Home exterior",
+    heroImage: IMAGES.svcRepairs,
+    heroAlt: "Home exterior with windows masked and repaired siding prepped for painting",
   },
 } satisfies Record<string, ServiceConfig>;
 

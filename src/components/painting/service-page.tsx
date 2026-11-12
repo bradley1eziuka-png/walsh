@@ -12,6 +12,7 @@ import {
   BUSINESS_PHONE_2_TEL,
   BUSINESS_PHONE_TEL,
 } from "@/lib/site-config";
+import { imgProps } from "@/lib/site-images";
 import type { ServiceConfig } from "@/lib/services-data";
 import { SectionHeading } from "./section-heading";
 import { ctaButton } from "./buttons";
@@ -25,7 +26,7 @@ export function ServicePage({ service }: { service: ServiceConfig }) {
       <section id="top" className="relative isolate flex min-h-[68vh] items-center overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <img
-            src={service.heroImage}
+            {...imgProps(service.heroImage, "100vw")}
             alt={service.heroAlt}
             className="h-full w-full object-cover"
             loading="eager"
@@ -94,7 +95,7 @@ export function ServicePage({ service }: { service: ServiceConfig }) {
             return (
               <div className="overflow-hidden rounded-3xl border border-border shadow-[0_30px_60px_-30px_rgba(0,0,0,0.35)]">
                 <img
-                  src={feature!.src}
+                  {...imgProps(feature!.src, "(min-width: 1024px) 560px, 100vw")}
                   alt={feature!.alt}
                   loading="lazy"
                   className="aspect-[4/3] w-full object-cover"

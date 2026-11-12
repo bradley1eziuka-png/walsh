@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 
 import { BBB, BUSINESS_PHONE_TEL, COPY, YEARS } from "@/lib/site-config";
-import { IMAGES } from "@/lib/site-images";
+import { IMAGES, imgProps } from "@/lib/site-images";
 import { SectionHeading } from "./section-heading";
 import { ctaButton } from "./buttons";
 
@@ -12,8 +12,8 @@ export function Trust() {
         <div className="relative">
           <div className="overflow-hidden rounded-3xl border border-border shadow-[0_30px_60px_-30px_rgba(0,0,0,0.35)]">
             <img
-              src={IMAGES.galleryExterior}
-              alt="Home exterior with painted siding and trim"
+              {...imgProps(IMAGES.aboutWalsh, "(min-width: 1024px) 560px, 100vw")}
+              alt="Well-kept home with freshly painted siding and trim near Lake Michigan"
               loading="lazy"
               className="aspect-[4/3] w-full object-cover"
             />

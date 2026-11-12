@@ -64,4 +64,10 @@ export const DEFAULT_IMAGES = {
   galleryKitchen: "/images/gallery-kitchen.jpg",
   galleryTrim: "/images/gallery-trim.jpg",
   trust: "/images/trust.jpg",
+  svcExterior: "/images/exterior-painting.webp",
+  svcPowerWashing: "/images/power-washing.webp",
+  svcDeck: "/images/deck-cleaning-staining.webp",
+  svcInterior: "/images/interior-painting.webp",
+  svcRepairs: "/images/exterior-prep-repairs.webp",
+  aboutWalsh: "/images/about-walsh.webp",
 } as const;
