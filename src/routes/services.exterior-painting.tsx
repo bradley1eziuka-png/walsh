@@ -4,7 +4,7 @@ import { SiteLayout } from "@/components/painting/site-layout";
 import { ServicePage } from "@/components/painting/service-page";
 import { isServiceEnabled, SERVICES } from "@/lib/services-data";
 import { BUSINESS_NAME } from "@/lib/site-config";
-import { pageHead } from "@/lib/seo";
+import { breadcrumbJsonLd, faqJsonLd, pageHead, serviceJsonLd, withBrand } from "@/lib/seo";
 
 const service = SERVICES.exterior;
 
@@ -15,10 +15,15 @@ export const Route = createFileRoute("/services/exterior-painting")({
   },
   head: () =>
     pageHead({
-      title: `${service.seoTitle} | ${BUSINESS_NAME}`,
+      title: withBrand(`${service.seoTitle}`),
       description: service.seoDescription,
       path: service.path,
       image: service.heroImage,
+      jsonLd: [
+        serviceJsonLd(service),
+        faqJsonLd(service.faqs),
+        breadcrumbJsonLd([{ name: service.title, path: service.path }]),
+      ],
     }),
   component: ExteriorPaintingPage,
 });

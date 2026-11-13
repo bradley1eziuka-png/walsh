@@ -11,10 +11,17 @@ import { Faq } from "@/components/painting/faq";
 import { FinalCta } from "@/components/painting/final-cta";
 import { ContactSection } from "@/components/painting/contact-section";
 import { Testimonials } from "@/components/painting/testimonials";
-import { HOME_DESCRIPTION, HOME_TITLE, pageHead } from "@/lib/seo";
+import { HOME_DESCRIPTION, HOME_TITLE, faqJsonLd, pageHead } from "@/lib/seo";
+import { COPY } from "@/lib/site-config";
 
 export const Route = createFileRoute("/")({
-  head: () => pageHead({ title: HOME_TITLE, description: HOME_DESCRIPTION, path: "/" }),
+  head: () =>
+    pageHead({
+      title: HOME_TITLE,
+      description: HOME_DESCRIPTION,
+      path: "/",
+      jsonLd: [faqJsonLd(COPY.faqs)],
+    }),
   component: Index,
 });
 

@@ -6,15 +6,17 @@ import { PageHero } from "@/components/painting/page-hero";
 import { FinalCta } from "@/components/painting/final-cta";
 import { AREAS } from "@/lib/areas-data";
 import { BUSINESS_NAME } from "@/lib/site-config";
-import { pageHead } from "@/lib/seo";
+import { SERVICE_LIST } from "@/lib/services-data";
+import { breadcrumbJsonLd, pageHead, withBrand } from "@/lib/seo";
 
 export const Route = createFileRoute("/service-areas/")({
   head: () =>
     pageHead({
-      title: `Service Areas: Michigan City, Chesterton, Valparaiso & More | ${BUSINESS_NAME}`,
+      title: withBrand(`Painting & Power Washing in Northwest Indiana`),
       description:
-        "Painting and power washing in Michigan City, Chesterton, Valparaiso, Ogden Dunes, and Lakeside, Michigan, plus nearby Lake Michigan beach communities.",
+        "Painting contractors and power washing in Michigan City, Chesterton, Valparaiso, and Ogden Dunes, IN, plus Lakeside, MI. See the communities we serve.",
       path: "/service-areas",
+      jsonLd: [breadcrumbJsonLd([{ name: "Service Areas", path: "/service-areas" }])],
     }),
   component: ServiceAreasPage,
 });
@@ -24,14 +26,16 @@ function ServiceAreasPage() {
     <SiteLayout>
       <PageHero
         eyebrow="Service Areas"
-        title="Serving Michigan City & Lake Michigan's Beach Communities"
-        description="Professional painting and power washing throughout Northwest Indiana and nearby Southwest Michigan."
+        title="Painting & Power Washing in Northwest Indiana"
+        description="Based in Michigan City, serving homeowners across Northwest Indiana and nearby Southwest Michigan."
       />
       <section className="section-pad bg-background">
         <div className="mx-auto max-w-6xl px-6">
           <p className="mx-auto max-w-2xl text-center text-lg leading-relaxed text-muted-foreground">
-            Serving Michigan City, Chesterton, Valparaiso, and Lake Michigan's surrounding beach
-            communities. Don't see your town? Call us. If you're nearby, we may be able to help.
+            We're based in Michigan City and serve homeowners in Chesterton, Valparaiso, Ogden
+            Dunes, and Lakeside, Michigan, along with nearby Lake Michigan communities. Choose your
+            town below to see what we offer there. Don't see yours? Call us. If you're nearby, we
+            may be able to help.
           </p>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {AREAS.map((area) => (
@@ -55,6 +59,28 @@ function ServiceAreasPage() {
                 </span>
               </a>
             ))}
+          </div>
+          <div className="mx-auto mt-16 max-w-3xl text-center">
+            <h2 className="font-display text-2xl font-semibold tracking-tight text-primary sm:text-3xl">
+              The Same Services in Every Community
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+              Wherever you live, the work is the same: thorough preparation, careful painting or
+              washing, and a clean job site. Lakeshore homes deal with wind, moisture, and sun, and
+              inland homes see the same hard freezes, so we plan each job around your property.
+            </p>
+            <ul className="mt-8 grid gap-3 text-left sm:grid-cols-2">
+              {SERVICE_LIST.map((s) => (
+                <li key={s.slug}>
+                  <a
+                    href={s.path}
+                    className="block rounded-xl border border-border bg-card px-5 py-4 font-semibold text-primary transition-colors hover:border-accent/50 hover:text-brand-text"
+                  >
+                    {s.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>

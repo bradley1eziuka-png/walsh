@@ -13,15 +13,16 @@ import {
   BUSINESS_PHONE_2_TEL,
   BUSINESS_PHONE_TEL,
 } from "@/lib/site-config";
-import { pageHead } from "@/lib/seo";
+import { breadcrumbJsonLd, pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/contact")({
   head: () =>
     pageHead({
-      title: `Contact | Call for a Painting or Power Washing Estimate | ${BUSINESS_NAME}`,
+      title: `Contact ${BUSINESS_NAME} | Call (219) 741-0481`,
       description:
         "Call (219) 741-0481 to discuss painting or power washing in Michigan City, IN. Open seven days a week. Serving Northwest Indiana and nearby Southwest Michigan.",
       path: "/contact",
+      jsonLd: [breadcrumbJsonLd([{ name: "Contact", path: "/contact" }])],
     }),
   component: ContactPage,
 });

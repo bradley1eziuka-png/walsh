@@ -7,12 +7,12 @@ import {
   BUSINESS_NAME,
   BUSINESS_PHONE,
 } from "@/lib/site-config";
-import { pageHead } from "@/lib/seo";
+import { pageHead, withBrand } from "@/lib/seo";
 
 export const Route = createFileRoute("/terms")({
   head: () =>
     pageHead({
-      title: `Terms of Use | ${BUSINESS_NAME}`,
+      title: withBrand(`Terms of Use`),
       description: `Terms for using the ${BUSINESS_NAME} website.`,
       path: "/terms",
     }),

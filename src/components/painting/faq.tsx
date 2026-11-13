@@ -1,10 +1,5 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { COPY } from "@/lib/site-config";
+import { FaqList } from "./faq-list";
 import { SectionHeading } from "./section-heading";
 
 export function Faq() {
@@ -17,22 +12,7 @@ export function Faq() {
           description="Straightforward answers to help you feel ready to start your painting project."
         />
 
-        <Accordion type="single" collapsible className="mt-12 space-y-4">
-          {COPY.faqs.map((faq, i) => (
-            <AccordionItem
-              key={faq.q}
-              value={`item-${i}`}
-              className="rounded-xl border border-border bg-card px-6 shadow-[0_2px_16px_-12px_rgba(0,0,0,0.14)]"
-            >
-              <AccordionTrigger className="py-5 text-left font-display text-base font-semibold tracking-tight text-primary hover:no-underline">
-                {faq.q}
-              </AccordionTrigger>
-              <AccordionContent className="pb-5 text-[0.95rem] leading-relaxed text-muted-foreground">
-                {faq.a}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
+        <FaqList items={COPY.faqs} group="home-faq" />
       </div>
     </section>
   );

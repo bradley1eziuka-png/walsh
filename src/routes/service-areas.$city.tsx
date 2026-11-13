@@ -8,7 +8,7 @@ import { SectionHeading } from "@/components/painting/section-heading";
 import { AREAS, getArea } from "@/lib/areas-data";
 import { SERVICE_LIST } from "@/lib/services-data";
 import { BUSINESS_NAME } from "@/lib/site-config";
-import { pageHead } from "@/lib/seo";
+import { breadcrumbJsonLd, pageHead, withBrand } from "@/lib/seo";
 
 export const Route = createFileRoute("/service-areas/$city")({
   beforeLoad: ({ params }) => {
@@ -17,9 +17,15 @@ export const Route = createFileRoute("/service-areas/$city")({
   head: ({ params }) => {
     const area = getArea(params.city);
     return pageHead({
-      title: `${area?.seoTitle ?? "Service Area"} | ${BUSINESS_NAME}`,
+      title: withBrand(`${area?.seoTitle ?? "Service Area"}`),
       description: area?.seoDescription ?? "",
       path: `/service-areas/${params.city}`,
+      jsonLd: [
+        breadcrumbJsonLd([
+          { name: "Service Areas", path: "/service-areas" },
+          { name: area?.name ?? "", path: `/service-areas/${params.city}` },
+        ]),
+      ],
     });
   },
   component: AreaPage,

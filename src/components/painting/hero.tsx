@@ -8,7 +8,7 @@ import {
   BUSINESS_PHONE_TEL,
   COPY,
 } from "@/lib/site-config";
-import { IMAGES } from "@/lib/site-images";
+import { IMAGES, imgProps } from "@/lib/site-images";
 import { ctaButton } from "./buttons";
 import { CallCard } from "./call-card";
 
@@ -30,7 +30,7 @@ export function Hero() {
     >
       <div className="absolute inset-0 -z-10">
         <img
-          src={IMAGES.hero}
+          {...imgProps(IMAGES.hero, "100vw")}
           alt="Residential home exterior with clean siding and trim"
           className="h-full w-full object-cover"
           loading="eager"

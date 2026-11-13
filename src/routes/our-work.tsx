@@ -5,15 +5,16 @@ import { PageHero } from "@/components/painting/page-hero";
 import { Gallery } from "@/components/painting/gallery";
 import { FinalCta } from "@/components/painting/final-cta";
 import { BUSINESS_NAME } from "@/lib/site-config";
-import { pageHead } from "@/lib/seo";
+import { breadcrumbJsonLd, pageHead, withBrand } from "@/lib/seo";
 
 export const Route = createFileRoute("/our-work")({
   head: () =>
     pageHead({
-      title: `Our Work | Painting & Power Washing | ${BUSINESS_NAME}`,
+      title: withBrand(`Our Work | Painting & Power Washing`),
       description:
-        "A look at the kind of painting, power washing, and deck work Walsh Painting & Powerwashing does in Michigan City, IN and nearby communities.",
+        "Illustrative examples of the exterior painting, power washing, and deck work Walsh Painting & Powerwashing offers in Michigan City, IN and nearby communities.",
       path: "/our-work",
+      jsonLd: [breadcrumbJsonLd([{ name: "Our Work", path: "/our-work" }])],
     }),
   component: OurWorkPage,
 });

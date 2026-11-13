@@ -1,10 +1,4 @@
 import { ArrowRight, Check, Phone } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 
 import {
   BUSINESS_PHONE,
@@ -13,7 +7,8 @@ import {
   BUSINESS_PHONE_TEL,
 } from "@/lib/site-config";
 import { imgProps } from "@/lib/site-images";
-import type { ServiceConfig } from "@/lib/services-data";
+import { SERVICES, type ServiceConfig } from "@/lib/services-data";
+import { FaqList } from "./faq-list";
 import { SectionHeading } from "./section-heading";
 import { ctaButton } from "./buttons";
 
@@ -42,7 +37,7 @@ export function ServicePage({ service }: { service: ServiceConfig }) {
             {service.eyebrow}
           </p>
           <h1 className="font-display text-balance text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-6xl">
-            {service.title}
+            {service.h1}
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/85 sm:text-xl">
             {service.shortDescription}
@@ -75,6 +70,14 @@ export function ServicePage({ service }: { service: ServiceConfig }) {
             <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
               {service.explanation.body}
             </p>
+            {service.details.map((para) => (
+              <p
+                key={para}
+                className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg"
+              >
+                {para}
+              </p>
+            ))}
             <ul className="mt-6 grid gap-2 sm:grid-cols-2">
               {service.includes.map((item) => (
                 <li key={item} className="flex items-start gap-2 text-[0.95rem] text-foreground">
@@ -178,22 +181,40 @@ export function ServicePage({ service }: { service: ServiceConfig }) {
             title={`${service.title} FAQ`}
             description="Straightforward answers to help you feel ready to start your project."
           />
-          <Accordion type="single" collapsible className="mt-12 space-y-4">
-            {service.faqs.map((faq, i) => (
-              <AccordionItem
-                key={faq.q}
-                value={`item-${i}`}
-                className="rounded-xl border border-border bg-card px-6 shadow-[0_2px_16px_-12px_rgba(0,0,0,0.14)]"
-              >
-                <AccordionTrigger className="py-5 text-left font-display text-base font-semibold tracking-tight text-primary hover:no-underline">
-                  {faq.q}
-                </AccordionTrigger>
-                <AccordionContent className="pb-5 text-[0.95rem] leading-relaxed text-muted-foreground">
-                  {faq.a}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
+          <FaqList items={service.faqs} group={`faq-${service.slug}`} />
+        </div>
+      </section>
+
+      {/* ── Related services ─────────────────────────────────────────── */}
+      <section className="section-pad bg-secondary/40">
+        <div className="mx-auto max-w-4xl px-6">
+          <SectionHeading eyebrow="Related Services" title="Often Paired With This Service" />
+          <ul className="mt-10 grid gap-4 sm:grid-cols-2">
+            {service.related.map((r) => {
+              const target = SERVICES[r.key];
+              return (
+                <li key={r.key}>
+                  <a
+                    href={target.path}
+                    className="block h-full rounded-xl border border-border bg-card px-6 py-5 transition-colors hover:border-accent/50"
+                  >
+                    <span className="block font-display text-base font-semibold text-primary">
+                      {r.label}
+                    </span>
+                    <span className="mt-1 block text-sm leading-snug text-muted-foreground">
+                      {r.text}
+                    </span>
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+          <p className="mt-8 text-center text-sm text-muted-foreground">
+            Serving Michigan City and nearby communities.{" "}
+            <a href="/service-areas" className="font-semibold text-brand-text hover:underline">
+              See all service areas
+            </a>
+          </p>
         </div>
       </section>
 

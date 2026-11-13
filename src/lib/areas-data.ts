@@ -24,12 +24,12 @@ export const AREAS: AreaConfig[] = [
     name: "Michigan City",
     label: "Michigan City, IN",
     homeBase: true,
-    seoTitle: "Painting Contractor in Michigan City, IN | Power Washing & Deck Staining",
+    seoTitle: "Michigan City Painting & Power Washing Services",
     seoDescription:
-      "Painting contractor in Michigan City, IN. Exterior painting, house painting, power washing, and deck staining from Walsh Painting & Powerwashing, based here for 23 years.",
+      "Painting contractor in Michigan City, IN: exterior painting, power washing, and deck staining from Walsh Painting & Powerwashing, based here for 23 years.",
     headline: "Painting & Power Washing in Michigan City, Indiana",
     intro:
-      "Michigan City is home base for Walsh Painting & Powerwashing. For 23 years we've painted and cleaned homes here, and most of our customers are in Northwest Indiana.",
+      "Michigan City is home base for Walsh Painting & Powerwashing. For 23 years we've painted and cleaned homes here, and we serve homeowners across Northwest Indiana.",
     paragraphs: [
       "Living on the lakeshore is great, but Lake Michigan weather is hard on a home's exterior. Wind-driven moisture, sun, and freeze-and-thaw winters wear on paint, siding, and decks. If you're looking for a painting contractor in Michigan City, we handle exterior painting, house painting, deck painting and staining, and professional power washing.",
       "Many homeowners start with a good cleaning. Power washing siding, a deck, or a driveway can make a property look noticeably fresher, and it's also the right first step before painting or staining. We clean with the surface in mind, protect the surrounding property, and clean up when we're finished.",
@@ -55,10 +55,10 @@ export const AREAS: AreaConfig[] = [
     label: "Chesterton, IN",
     seoTitle: "Painting Contractor & Power Washing in Chesterton, IN",
     seoDescription:
-      "Painting contractor and power washing in Chesterton, IN, a short drive from Michigan City. Exterior painting, deck staining, and house washing from Walsh Painting & Powerwashing.",
+      "Painting contractor and power washing in Chesterton, IN, a short drive from Michigan City. Exterior painting and deck staining from Walsh Painting & Powerwashing.",
     headline: "Painting Contractor & Power Washing in Chesterton, IN",
     intro:
-      "Chesterton is a short drive west of our Michigan City base, and we regularly serve homeowners here.",
+      "Chesterton is a short drive west of our Michigan City base, and we serve homeowners here.",
     paragraphs: [
       "Chesterton sits close to the Indiana Dunes and Lake Michigan, so homes here deal with the same lake-region weather we're used to in Michigan City: humid summers, wind, and cold winters. If you need a painting contractor in Chesterton, IN, we offer exterior painting, interior painting, and deck work.",
       "If your siding has gone green or gray, or your driveway or deck has built up a season's worth of grime, power washing in Chesterton is a quick way to freshen things up. We choose our method based on the surface so we can clean it properly without causing unnecessary damage to the surrounding property.",
@@ -84,7 +84,7 @@ export const AREAS: AreaConfig[] = [
     label: "Valparaiso, IN",
     seoTitle: "Painting Contractor & Power Washing in Valparaiso, IN",
     seoDescription:
-      "Painting contractor and power washing in Valparaiso, IN. Exterior painting, house washing, and deck staining from Walsh Painting & Powerwashing in Michigan City.",
+      "Painting contractor and power washing in Valparaiso, IN. Exterior painting, house washing, and deck staining from Walsh Painting & Powerwashing.",
     headline: "Painting Contractor & Power Washing in Valparaiso, IN",
     intro:
       "We travel from Michigan City to serve homeowners in Valparaiso and the surrounding part of Porter County.",
@@ -111,9 +111,9 @@ export const AREAS: AreaConfig[] = [
     slug: "ogden-dunes",
     name: "Ogden Dunes",
     label: "Ogden Dunes, IN",
-    seoTitle: "Painting & Power Washing in Ogden Dunes, IN",
+    seoTitle: "Power Washing & Painting in Ogden Dunes, IN",
     seoDescription:
-      "Exterior painting, power washing, and deck staining in Ogden Dunes, IN, on the Lake Michigan shore. Walsh Painting & Powerwashing serves the beach communities of Northwest Indiana.",
+      "Power washing, exterior painting, and deck staining in Ogden Dunes, IN, on the Lake Michigan shore, from Walsh Painting & Powerwashing in Michigan City.",
     headline: "Painting & Power Washing in Ogden Dunes, IN",
     intro:
       "Ogden Dunes is one of the Lake Michigan beach communities we serve, a bit west of our Michigan City base.",
@@ -131,8 +131,8 @@ export const AREAS: AreaConfig[] = [
         text: "Cleaning, staining, and painting decks is one of our core services.",
       },
       {
-        title: "Gentle on surroundings",
-        text: "We protect nearby plants and surfaces and clean up when we're finished.",
+        title: "Care for surroundings",
+        text: "We protect surrounding surfaces and clean up when we're finished.",
       },
     ],
   },
@@ -142,7 +142,7 @@ export const AREAS: AreaConfig[] = [
     label: "Lakeside, MI",
     seoTitle: "Painting & Power Washing in Lakeside, Michigan",
     seoDescription:
-      "Painting and power washing in Lakeside, Michigan, just across the state line from Michigan City. Exterior painting and deck services from Walsh Painting & Powerwashing.",
+      "Painting and power washing in Lakeside, Michigan, just across the state line from Michigan City. Exterior painting and deck services from Walsh Painting.",
     headline: "Painting & Power Washing in Lakeside, Michigan",
     intro:
       "Our work doesn't stop at the state line. We also serve Lakeside, Michigan, and nearby Southwest Michigan beach communities.",

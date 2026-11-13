@@ -7,12 +7,12 @@ import {
   BUSINESS_NAME,
   BUSINESS_PHONE,
 } from "@/lib/site-config";
-import { pageHead } from "@/lib/seo";
+import { pageHead, withBrand } from "@/lib/seo";
 
 export const Route = createFileRoute("/privacy")({
   head: () =>
     pageHead({
-      title: `Privacy Policy | ${BUSINESS_NAME}`,
+      title: withBrand(`Privacy Policy`),
       description: `How ${BUSINESS_NAME} handles information in connection with this website.`,
       path: "/privacy",
     }),

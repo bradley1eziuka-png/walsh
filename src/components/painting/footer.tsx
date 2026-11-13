@@ -205,7 +205,17 @@ export function Footer() {
           <p className="text-center text-xs text-white/55 sm:text-left">
             © {year} {BUSINESS_LEGAL_NAME}. All rights reserved.
           </p>
-          <p className="text-xs text-white/55">Painting &amp; Power Washing · Michigan City, IN</p>
+          <p className="text-xs text-white/55">
+            Painting &amp; Power Washing · Michigan City, IN ·{" "}
+            <a
+              href="https://getarclo.com"
+              target="_blank"
+              rel="noopener"
+              className="underline-offset-4 transition-colors hover:text-accent hover:underline"
+            >
+              Website by Arclo
+            </a>
+          </p>
         </div>
       </div>
     </footer>

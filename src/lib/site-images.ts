@@ -20,6 +20,15 @@ const FOCUS: Record<string, string> = {
   "about-walsh": "60% 50%",
 };
 
+const DIMENSIONS: Record<string, [number, number]> = { hero: [1200, 896] };
+
+// Open Graph / Twitter images must be JPG or PNG for broad support. Each
+// optimized .webp has a 1200×630 .jpg twin in /images/og/.
+export function ogImagePath(src: string) {
+  const m = /\/([a-z-]+)\.webp$/.exec(src);
+  return m ? `/images/og/${m[1]}.jpg` : src;
+}
+
 export function imgProps(src: string, sizes = "(min-width: 1024px) 400px, 100vw") {
   const m = /^(.*\/([a-z-]+))\.webp$/.exec(src);
   if (!m) return { src };
@@ -27,8 +36,8 @@ export function imgProps(src: string, sizes = "(min-width: 1024px) 400px, 100vw"
     src,
     srcSet: `${m[1]}-700.webp 700w, ${src} 1400w`,
     sizes,
-    width: 1400,
-    height: 788,
+    width: (DIMENSIONS[m[2]!] ?? [1400, 788])[0],
+    height: (DIMENSIONS[m[2]!] ?? [1400, 788])[1],
     style: { objectPosition: FOCUS[m[2]!] ?? "50% 50%" },
   };
 }

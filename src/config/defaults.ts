@@ -7,19 +7,23 @@
 export const DEFAULT_CONTENT = {
   hero: {
     eyebrow: "23 Years in Business · Michigan City, IN",
-    headline: "Professional Painting & Power Washing in Michigan City",
+    headline: "House Painting & Power Washing in Michigan City, IN",
     tagline: "Painting & Power Washing Specialists",
     subheadline:
-      "With 23 years of experience, Walsh Painting & Powerwashing provides professional exterior painting, power washing, and deck services throughout Michigan City and the surrounding Lake Michigan communities.",
+      "Give your home's exterior a fresh look with house painting, power washing, and deck cleaning and staining. With 23 years of experience, we serve homeowners in Michigan City, Chesterton, Valparaiso, and nearby Lake Michigan communities, with thorough prep, careful workmanship, and a clean finish.",
   },
   about: {
     eyebrow: "About Walsh",
     title: "23 Years of Painting & Power Washing Experience",
-    body: "At Walsh Painting & Powerwashing, we believe quality work starts with proper preparation and attention to detail. For 23 years, we've helped homeowners maintain and improve their properties through professional painting, power washing, and deck services.\n\nOur team takes pride in doing the job carefully, protecting surrounding surfaces, and cleaning up when the work is finished. From refreshing a home's exterior to cleaning a weathered deck, we focus on delivering dependable service and results homeowners can appreciate.",
+    body: "At Walsh Painting & Powerwashing, we believe a good result starts with preparation. For 23 years, we've helped homeowners in Michigan City and nearby communities refresh their properties with exterior painting, power washing, and deck cleaning and staining.\n\nWe protect the surfaces around the work, take our time on the details, and clean up when the job is finished. From repainting a home's exterior to bringing a weathered deck back, we explain what the job involves so you know what to expect.",
     badgeTitle: "23 Years",
     badgeText: "serving homeowners",
   },
   faqs: [
+    {
+      q: "What painting and power washing services do you offer?",
+      a: "Exterior house painting, residential power washing, deck cleaning, painting and staining, interior painting, and exterior preparation with coordinated repairs. Exterior painting, power washing, and deck work are our main focus.",
+    },
     {
       q: "How do I get an estimate?",
       a: "Give us a call at (219) 741-0481. Tell us what you'd like painted or cleaned and where the property is, and we'll talk through the details.",
@@ -49,12 +53,12 @@ export const DEFAULT_CONTENT = {
   },
   seo: {
     description:
-      "Walsh Painting & Powerwashing: 23 years of exterior painting, power washing, and deck services in Michigan City, IN, Chesterton, Valparaiso, Ogden Dunes, and Lakeside, MI. Call for an estimate.",
+      "Michigan City painting contractor: house painting, power washing & deck staining. 23 years of experience. Call (219) 741-0481 for an estimate.",
   },
 } as const;
 
 export const DEFAULT_IMAGES = {
-  hero: "/images/hero.jpg",
+  hero: "/images/hero.webp",
   interior: "/images/interior.jpg",
   exterior: "/images/exterior.jpg",
   powerWashing: "/images/power-washing.jpg",

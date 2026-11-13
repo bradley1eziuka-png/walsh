@@ -7,7 +7,7 @@ import {
   BUSINESS_PHONE_TEL,
   COPY,
 } from "@/lib/site-config";
-import { IMAGES } from "@/lib/site-images";
+import { IMAGES, imgProps } from "@/lib/site-images";
 import { ctaButton } from "./buttons";
 
 export function FinalCta() {
@@ -15,7 +15,7 @@ export function FinalCta() {
     <section className="relative isolate overflow-hidden bg-primary">
       <div className="absolute inset-0 -z-10">
         <img
-          src={IMAGES.hero}
+          {...imgProps(IMAGES.hero, "100vw")}
           alt=""
           aria-hidden
           loading="lazy"
