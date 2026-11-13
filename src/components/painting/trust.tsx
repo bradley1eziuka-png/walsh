@@ -39,14 +39,14 @@ export function Trust() {
           {BBB && (
             <div className="mt-5">
               <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
-                Along with {YEARS} years of experience, we're a{" "}
+                Along with {YEARS} years of experience, we're{" "}
                 <a
                   href={BBB.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-semibold text-brand-text underline underline-offset-4"
                 >
-                  BBB Accredited Business
+                  5-Star Rated with the Better Business Bureau
                 </a>
                 .
               </p>

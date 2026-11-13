@@ -46,8 +46,8 @@ export const siteConfigSchema = z.object({
     // Set false to keep the street address out of the page text and structured data.
     showStreetAddress: z.boolean().default(false),
     hoursNote: optionalText,
-    // BBB credentials (accreditation only; no rating claims until verified). Shown only when verified is true.
-    // Do not claim an A+ or 5-star rating unless the BBB profile shows it. Do not add the BBB
+    // BBB credentials (5-star claim approved by the owner). Shown only when verified is true.
+    // The public BBB profile currently lists 0 reviews. Do not add the BBB
     // logo or seal without BBB's permission.
     bbb: z
       .object({
