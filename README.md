@@ -15,11 +15,10 @@ npm run check      # pre-launch checklist: flags demo form, leftover template st
 ## Before launch
 
 - **Estimates are by phone.** There are no online forms; every estimate CTA is a `tel:` link to (219) 741-0481.
-- **BBB credentials**: shown (hero, Why Choose Us, About, footer) from `business.bbb`. The "5-Star Rated with
-  the Better Business Bureau" claim was approved by the owner. The public BBB profile (listed under a former
-  business name, which the owner asked to keep off the site) currently shows A+, accredited since 2019, and
-  0 customer reviews, so re-check it before launch. No BBB logo/seal without BBB's permission.
-  Set `verified` to `false` to hide everything.
+- **BBB credentials are TEMPORARILY HIDDEN** (`business.bbb.verified` is `false`) because the BBB listing is
+  under the former business name. The text and profile URL are preserved in `site.config.json`. Once BBB
+  updates the listing, re-verify it, then set `verified` to `true` to restore the hero, Why Choose Us,
+  About, and footer mentions. Only claim what the live profile shows. No BBB logo/seal without permission.
 - **Domain**: set `seo.siteUrl` (or the `SITE_URL` / `VITE_SITE_URL` env var) to enable canonical tags,
   OG URLs, sitemap.xml, and the robots.txt Sitemap line.
 - **Street address**: `business.showStreetAddress` is `false`. Set `true` only if the owner wants
