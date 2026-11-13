@@ -46,7 +46,7 @@ export function Trust() {
                   rel="noopener noreferrer"
                   className="font-semibold text-brand-text underline underline-offset-4"
                 >
-                  BBB Accredited Business with an A+ BBB rating
+                  BBB Accredited Business
                 </a>
                 .
               </p>

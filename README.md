@@ -15,10 +15,10 @@ npm run check      # pre-launch checklist: flags demo form, leftover template st
 ## Before launch
 
 - **Estimates are by phone.** There are no online forms; every estimate CTA is a `tel:` link to (219) 741-0481.
-- **BBB credentials**: shown (hero, Why Choose Us, About, footer) from `business.bbb`: A+ business rating
-  and BBB Accredited status, verified on the BBB profile. The profile is under a former business
-  name; the owner asked that the name not appear on the site. These are NOT customer-review stars
-  (the profile has 0 reviews); never add a star rating. No BBB logo/seal without BBB's permission.
+- **BBB credentials**: shown (hero, Why Choose Us, About, footer) from `business.bbb`: BBB Accredited status
+  only, verified on the BBB profile. A "5-star" claim is NOT published: the profile shows 0 customer reviews. The profile is under a former business
+  name; the owner asked that the name not appear on the site. Never add a star rating or an A+ claim
+  without BBB support. No BBB logo/seal without BBB's permission.
   Re-check the profile before launch; set `verified` to `false` to hide everything.
 - **Domain**: set `seo.siteUrl` (or the `SITE_URL` / `VITE_SITE_URL` env var) to enable canonical tags,
   OG URLs, sitemap.xml, and the robots.txt Sitemap line.
